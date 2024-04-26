@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+
+.select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 140px;
+}
+
+.textfield {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+
+.textfieldContainer {
+  flex-grow: 1;
+}

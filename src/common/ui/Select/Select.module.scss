@@ -1,0 +1,29 @@
+.container {
+  border-radius: 8px;
+  border: 1px solid #5e6488;
+  overflow: hidden;
+ 
+  &:focus-within {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+}
+
+.select {
+  padding: 1rem;
+  font-family: 'BRSonoma';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  width: 100%;
+  border: none;
+  border-right: 10px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.container, .select {
+  height: 56px;
+}

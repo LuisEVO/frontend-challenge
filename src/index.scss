@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/br-sonoma/BRSonoma-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/br-sonoma/BRSonoma-SemiBold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/br-sonoma/BRSonoma-Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/Lato/Lato-Regular.ttf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/Lato/Lato-Bold.ttf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../public/fonts/Lato/Lato-Black.ttf') format('opentype');
+  font-display: swap;
+}
+
+:root {
+  --color-dark: #03050f;
+  --color-light: #f8f9ff;
+  --color-purple-light: #fafbff;
+  --color-purple: #edeffc;
+  --color-purple-dark: #4f4fff;
+  --color-gray: #5e6488;
+  --color-gray-neutral: #7981b2;
+  --color-gray-light: #d7dbf5;
+  --color-error: #ff1c44;
+  --color-success: #389e0d;
+  --layout-padding: 24px;
+  --layout-width: calc(1120px - calc(var(--layout-padding) * 2));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-purple-light);
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+}

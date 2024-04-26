@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding-inline: var(--layout-padding);
+  margin: auto;
+  max-width: var(--layout-width);
+  width: 100%;
+
+  &__alert {
+    display: none;
+  }
+
+  &__logo {
+    width: 74px;
+    height: 36px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__number {
+    display: flex;
+    
+    img {
+      height: 20px;
+      width: 20px;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    &__alert {
+      display: block;
+    }
+  }
+}

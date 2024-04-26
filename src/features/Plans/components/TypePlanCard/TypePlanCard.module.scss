@@ -1,0 +1,47 @@
+.container {
+  --icon-width: 32px;
+  max-width: 336px;
+  width: 100%;
+  height: 160px;
+  position: relative;
+  display: grid;
+  grid-template-areas: 'icon title' 'description description';
+  grid-template-columns: var(--icon-width) 1fr;
+  grid-template-rows: var(--icon-width) 1fr;
+  gap: 0.5rem;
+  padding: 40px 1rem;
+
+  .radio {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
+
+  .icon {
+    grid-area: icon;
+    width: var(--icon-width);
+    height: var(--icon-width);
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .description {
+    grid-area: description;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: unset;
+    width: 256px;
+    height: 212px;
+    grid-template-areas: 'icon' 'title' 'description';
+    grid-template-columns: 1fr;
+
+    .title {
+      align-self: center;
+    }
+  }
+}
