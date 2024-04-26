@@ -1,10 +1,9 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
-import { RootState } from '../../../core/store/store';
+import { applyDiscount } from '../../../common/utils/apply-discount';
+import { slugify } from '../../../common/utils/slugify';
 import PlansHttp from '../http/plans-http';
 import { Plan } from '../types/plan';
-import { applyDiscount } from '../../../common/utils/apply-discount';
-import { slugify } from '../../../common/utils/a';
 
 const PlanIconMap = new Map<string, string>([
   ['plan-en-casa', 'HomeLight'],
